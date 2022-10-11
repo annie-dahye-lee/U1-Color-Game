@@ -148,7 +148,7 @@ color[] colors = {pink, blue, green, purple, red, orange, orange};
 
 // MUSIC
 Minim minim = new Minim(this);
-AudioPlayer intro, options, pauseBGM, gameover, winMusic;
+AudioPlayer intro, options, pauseBGM, gameover, winMusic, correct, incorrect;
 
 // arrow selectors
 PShape r;
@@ -157,13 +157,15 @@ PShape l;
 // setup
 void setup() {
   size(800, 800); // game window
-  mode = INTRO;   // start at intro screen
+  mode = GAME;   // start at intro screen
 
   // load song files
   intro = minim.loadFile("intro.mp3");
   options = minim.loadFile("options.mp3");
   gameover = minim.loadFile("gameover.mp3");
   winMusic = minim.loadFile("win.mp3");
+  correct = minim.loadFile("correct.mp3");
+  incorrect = minim.loadFile("incorrect.mp3");
 
   // center text and rects
   textAlign(CENTER, CENTER);

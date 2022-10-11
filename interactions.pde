@@ -97,16 +97,32 @@ void tactileRect(int x, int y, int w, int h) {
 
 // MATCH/UNMATCH
 void match1(float v) {
-  if (isMatch) score++;
-  if (!isMatch) score--;
+  if (isMatch) {
+    correct.play();
+    correct.rewind();
+    score++;
+  }
+  if (!isMatch) {
+    incorrect.play();
+    incorrect.rewind();
+    score--;
+  }
   randomNum();
   y = -120;
   puzzle(v, viper2, 70);
 }
 
 void unmatch(float v) {
-  if (!isMatch) score++;
-  if (isMatch) score--;
+  if (!isMatch) {
+    correct.play();
+    correct.rewind();
+    score++;
+  }
+  if (isMatch) {
+    incorrect.play();
+    incorrect.rewind();
+    score--;
+  }
   randomNum();
   y = -120;
   puzzle(v, viper2, 70);
