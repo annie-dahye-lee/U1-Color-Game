@@ -157,7 +157,7 @@ PShape l;
 // setup
 void setup() {
   size(800, 800); // game window
-  mode = GAME;   // start at intro screen
+  mode = INTRO;   // start at intro screen
 
   // load song files
   intro = minim.loadFile("intro.mp3");
