@@ -293,8 +293,8 @@ void draw() {
   else println("Error: Mode = " + mode);
 }
 
-// puzzle
 void puzzle(float v, PFont font, int size) {
+  // puzzle logic
   if (chance > 0.5) { // 50% chance of matching
     isMatch = true;
     randomWord = randomColor;

@@ -25,7 +25,6 @@ void intro() {
     shape(l, 297, height-158, 60, 60);
   }
 
-
   // options arrow selector
   if (mouseX > 303 & mouseX < 490 && mouseY > 710 && mouseY < 750) {
     shape(l, 260, 703, 60, 60);

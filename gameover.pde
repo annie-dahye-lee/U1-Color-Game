@@ -4,7 +4,7 @@ void gameover() {
   options.pause();
   gameover.play();
 
-  background(blue); // background
+  background(blue);
 
   // flatlined text
   image(flatlined[flatlinedF], 100, 150, 600, 150); // img, x, y, width, height
